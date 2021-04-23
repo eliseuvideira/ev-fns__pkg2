@@ -1,20 +1,18 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "CommonJS",
-    "declaration": true,
-    "sourceMap": true,
-    "outDir": "build",
     "rootDir": "src",
+    "outDir": "lib",
+    "target": "ES2020",
+    "module": "CommonJS",
     "removeComments": true,
     "strict": true,
     "noUnusedLocals": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true
   },
   "include": ["src"],
-  "exclude": ["node_modules", "templates"]
+  "exclude": ["node_modules", "lib", "test"]
 }
