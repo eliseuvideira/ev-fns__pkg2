@@ -4,6 +4,7 @@
   "main": "index.js",
   "author": "Eliseu Videira <eliseuvideira1@gmail.com>",
   "license": "MIT",
+  "bin": "lib/index.js",
   "engines": {
     "node": ">=14"
   },
