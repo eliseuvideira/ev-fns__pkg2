@@ -8,7 +8,7 @@ interface CreateLibProps {
 
 const template = {
   name: "",
-  version: "0.1.0",
+  version: "0.0.0",
   main: "lib/index.js",
   types: "lib/index.d.ts",
   author: "",
@@ -56,4 +56,8 @@ export const createLib = async ({ directory: relativeDir }: CreateLibProps) => {
   );
 
   await invoke(dir, "yarn add -D jest @types/jest ts-jest typescript");
+
+  await invoke(dir, 'git add -A && git commit -m ":tada: first commit"');
+
+  await invoke(dir, "yarn version --minor");
 };
